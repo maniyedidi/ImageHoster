@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c332855e-1472-4d27-ab03-26b600a6ba8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/repository/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/images.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/images/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/images/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/controller/ImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/images/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/images/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/users/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/users/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.6643678" />
   </component>
-  <component name="RunManager" selected="JUnit.ImageControllerTest">
+  <component name="RunManager" selected="Application.ImageHosterApplication">
     <configuration name="ImageHosterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ImageHoster.ImageHosterApplication" />
       <module name="ImageHoster" />
@@ -205,26 +208,83 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="100" y="100" width="1720" height="1000" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594611879139" />
-    <state width="1878" height="322" key="GridCell.Tab.0.bottom" timestamp="1594614826502">
+    <state x="582" y="205" key="CommitChangelistDialog2" timestamp="1594719218445">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594614826502" />
-    <state width="1878" height="322" key="GridCell.Tab.0.center" timestamp="1594614826500">
+    <state x="582" y="205" key="CommitChangelistDialog2/0.0.1920.1200@0.0.1920.1200" timestamp="1594719218445" />
+    <state width="435" height="466" key="DebuggerActiveHint" timestamp="1594716835406">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594614826500" />
-    <state width="1878" height="322" key="GridCell.Tab.0.left" timestamp="1594614826499">
+    <state width="435" height="466" key="DebuggerActiveHint/0.0.1920.1200@0.0.1920.1200" timestamp="1594716835406" />
+    <state width="1878" height="382" key="GridCell.Tab.0.bottom" timestamp="1594718742588">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594614826499" />
-    <state width="1878" height="322" key="GridCell.Tab.0.right" timestamp="1594614826501">
+    <state width="1878" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594718742588" />
+    <state width="1878" height="95" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712273" />
+    <state width="1878" height="382" key="GridCell.Tab.0.center" timestamp="1594718742583">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594614826501" />
-    <state x="614" y="434" key="com.intellij.ide.util.TipDialog" timestamp="1594611147873">
+    <state width="1878" height="382" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594718742583" />
+    <state width="1878" height="95" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712267" />
+    <state width="1878" height="382" key="GridCell.Tab.0.left" timestamp="1594718742582">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="614" y="434" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594611147873" />
+    <state width="1878" height="382" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594718742582" />
+    <state width="1878" height="95" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712266" />
+    <state width="1878" height="382" key="GridCell.Tab.0.right" timestamp="1594718742585">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="382" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594718742585" />
+    <state width="1878" height="95" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712268" />
+    <state width="1878" height="382" key="GridCell.Tab.1.bottom" timestamp="1594718775146">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="382" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594718775146" />
+    <state width="1878" height="2" key="GridCell.Tab.1.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594716740928" />
+    <state width="1878" height="382" key="GridCell.Tab.1.center" timestamp="1594718775146">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="382" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594718775146" />
+    <state width="1878" height="2" key="GridCell.Tab.1.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594716740927" />
+    <state width="1878" height="382" key="GridCell.Tab.1.left" timestamp="1594718775145">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="382" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594718775145" />
+    <state width="1878" height="2" key="GridCell.Tab.1.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594716740927" />
+    <state width="1878" height="382" key="GridCell.Tab.1.right" timestamp="1594718775146">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="382" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594718775146" />
+    <state width="1878" height="2" key="GridCell.Tab.1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594716740928" />
+    <state x="741" y="317" key="RollbackChangesDialog" timestamp="1594719182859">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="741" y="317" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594719182859" />
+    <state x="614" y="434" key="com.intellij.ide.util.TipDialog" timestamp="1594705549891">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="614" y="434" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594705549891" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
