@@ -1,8 +1,10 @@
 package ImageHoster.controller;
 
+import ImageHoster.model.Comment;
 import ImageHoster.model.Image;
 import ImageHoster.model.Tag;
 import ImageHoster.model.User;
+import ImageHoster.service.CommentService;
 import ImageHoster.service.ImageService;
 import ImageHoster.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,9 @@ public class ImageController {
 
     @Autowired
     private ImageService imageService;
+
+    @Autowired
+    private CommentService commentService;
 
     @Autowired
     private TagService tagService;
@@ -50,6 +55,8 @@ public class ImageController {
         Image image = imageService.getImageById(id);
         model.addAttribute("image", image);
         model.addAttribute("tags", image.getTags());
+        List<Comment> comments =  commentService.getAllCommentByImageId(image.getId());
+        model.addAttribute("comments",comments);
         return "images/image";
     }
 
@@ -165,6 +172,16 @@ public class ImageController {
 
     }
 
+    @RequestMapping("/image/{imageId}/{imageTitle}/comments")
+    public String addComment(@PathVariable("imageId") String imageId, @PathVariable("imageTitle") String imageTitle, Model model,HttpSession session,@RequestParam("comment") String comment) {
+
+        Image image = imageService.getImage(Integer.parseInt(imageId));
+        User user = (User) session.getAttribute("loggeduser");
+
+        Comment commentObj = new Comment(comment, new Date(), user, image);
+        commentService.uploadComment(commentObj);
+        return "redirect:/images/"+ image.getId();
+    }
 
     //This method converts the image to Base64 format
     private String convertUploadedFileToBase64(MultipartFile file) throws IOException {
