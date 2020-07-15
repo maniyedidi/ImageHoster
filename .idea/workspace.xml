@@ -4,12 +4,19 @@
     <list default="true" id="c332855e-1472-4d27-ab03-26b600a6ba8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/images.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/images/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/images/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageHoster/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageHoster/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ImageHoster/controller/ImageControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ImageHoster/controller/ImageControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/controller/ImageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/controller/ImageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/repository/CommentRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ImageHoster/service/ImageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ImageHoster/service/ImageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/images.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/images.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/images/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/images/image.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ImageHoster/controller/ImageControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ImageHoster/controller/ImageControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ImageHoster/controller/UserControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ImageHoster/controller/UserControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,20 +83,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.6643678" />
   </component>
-  <component name="RunManager" selected="Application.ImageHosterApplication">
-    <configuration name="ImageHosterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ImageHoster.ImageHosterApplication" />
-      <module name="ImageHoster" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ImageHoster.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ImageHoster.controller in ImageHoster">
     <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageHoster" />
       <extension name="coverage">
@@ -120,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImageControllerTest.editImageWithOwnerOfTheImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageHoster" />
       <extension name="coverage">
         <pattern>
@@ -129,31 +123,50 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ImageHoster.controller" />
-      <option name="MAIN_CLASS_NAME" value="ImageHoster.controller.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ImageHoster.controller.ImageControllerTest" />
+      <option name="METHOD_NAME" value="editImageWithOwnerOfTheImage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageHosterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ImageControllerTest.showImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImageHoster" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ImageHoster.*" />
+          <option name="PATTERN" value="ImageHoster.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ImageHoster.ImageHosterApplication" />
+      <option name="PACKAGE_NAME" value="ImageHoster.controller" />
+      <option name="MAIN_CLASS_NAME" value="ImageHoster.controller.ImageControllerTest" />
+      <option name="METHOD_NAME" value="showImage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageHoster.controller in ImageHoster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImageHoster" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ImageHoster.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ImageHoster.controller" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImageHosterApplication" />
+        <item itemvalue="JUnit.ImageHoster.controller in ImageHoster" />
         <item itemvalue="JUnit.ImageControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.HomeControllerTest" />
+        <item itemvalue="JUnit.ImageControllerTest.showImage" />
+        <item itemvalue="JUnit.ImageControllerTest.editImageWithOwnerOfTheImage" />
       </list>
     </recent_temporary>
   </component>
@@ -219,50 +232,50 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="435" height="466" key="DebuggerActiveHint/0.0.1920.1200@0.0.1920.1200" timestamp="1594716835406" />
-    <state width="1878" height="383" key="GridCell.Tab.0.bottom" timestamp="1594743271703">
+    <state width="1878" height="336" key="GridCell.Tab.0.bottom" timestamp="1594798978972">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594743271703" />
-    <state width="1878" height="95" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712273" />
-    <state width="1878" height="383" key="GridCell.Tab.0.center" timestamp="1594743271702">
+    <state width="1878" height="336" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594798978972" />
+    <state width="1878" height="175" key="GridCell.Tab.0.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594797901615" />
+    <state width="1878" height="336" key="GridCell.Tab.0.center" timestamp="1594798978971">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594743271702" />
-    <state width="1878" height="95" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712267" />
-    <state width="1878" height="383" key="GridCell.Tab.0.left" timestamp="1594743271701">
+    <state width="1878" height="336" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594798978971" />
+    <state width="1878" height="175" key="GridCell.Tab.0.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594797901613" />
+    <state width="1878" height="336" key="GridCell.Tab.0.left" timestamp="1594798978970">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594743271701" />
-    <state width="1878" height="95" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712266" />
-    <state width="1878" height="383" key="GridCell.Tab.0.right" timestamp="1594743271702">
+    <state width="1878" height="336" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594798978970" />
+    <state width="1878" height="175" key="GridCell.Tab.0.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594797901612" />
+    <state width="1878" height="336" key="GridCell.Tab.0.right" timestamp="1594798978972">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594743271702" />
-    <state width="1878" height="95" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594705712268" />
-    <state width="1878" height="383" key="GridCell.Tab.1.bottom" timestamp="1594743329705">
+    <state width="1878" height="336" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594798978972" />
+    <state width="1878" height="175" key="GridCell.Tab.0.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594797901614" />
+    <state width="1878" height="590" key="GridCell.Tab.1.bottom" timestamp="1594798920086">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594743329705" />
-    <state width="1878" height="381" key="GridCell.Tab.1.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594742247022" />
-    <state width="1878" height="383" key="GridCell.Tab.1.center" timestamp="1594743329704">
+    <state width="1878" height="590" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1594798920086" />
+    <state width="1878" height="638" key="GridCell.Tab.1.bottom/0.23.1920.1097@0.23.1920.1097" timestamp="1594798163202" />
+    <state width="1878" height="590" key="GridCell.Tab.1.center" timestamp="1594798920085">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594743329704" />
-    <state width="1878" height="381" key="GridCell.Tab.1.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594742247022" />
-    <state width="1878" height="383" key="GridCell.Tab.1.left" timestamp="1594743329704">
+    <state width="1878" height="590" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1594798920085" />
+    <state width="1878" height="638" key="GridCell.Tab.1.center/0.23.1920.1097@0.23.1920.1097" timestamp="1594798163201" />
+    <state width="1878" height="590" key="GridCell.Tab.1.left" timestamp="1594798920085">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594743329704" />
-    <state width="1878" height="381" key="GridCell.Tab.1.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594742247021" />
-    <state width="1878" height="383" key="GridCell.Tab.1.right" timestamp="1594743329704">
+    <state width="1878" height="590" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1594798920085" />
+    <state width="1878" height="638" key="GridCell.Tab.1.left/0.23.1920.1097@0.23.1920.1097" timestamp="1594798163200" />
+    <state width="1878" height="590" key="GridCell.Tab.1.right" timestamp="1594798920085">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="383" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594743329704" />
-    <state width="1878" height="381" key="GridCell.Tab.1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594742247022" />
-    <state x="741" y="317" key="RollbackChangesDialog" timestamp="1594719182859">
+    <state width="1878" height="590" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1594798920085" />
+    <state width="1878" height="638" key="GridCell.Tab.1.right/0.23.1920.1097@0.23.1920.1097" timestamp="1594798163201" />
+    <state x="741" y="317" key="RollbackChangesDialog" timestamp="1594795772314">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="741" y="317" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594719182859" />
+    <state x="741" y="317" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1594795772314" />
     <state x="614" y="434" key="com.intellij.ide.util.TipDialog" timestamp="1594705549891">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -277,13 +290,41 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
-          <line>165</line>
+          <line>167</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/CommentController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="18" />
+          <line>56</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ImageHoster/controller/ImageController.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ImageHoster/controller/ImageControllerTest.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ImageHoster/controller/ImageControllerTest.java</url>
+          <line>210</line>
+          <properties class="ImageHoster.controller.ImageControllerTest" method="editImageWithNonOwnerOfTheImage">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

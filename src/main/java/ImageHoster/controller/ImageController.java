@@ -52,7 +52,7 @@ public class ImageController {
     //this list is then sent to 'images/image.html' file and the tags are displayed
     @RequestMapping("/images/{id}/{imageTitle}")
     public String showImage(@PathVariable("id") Integer id, @PathVariable("imageTitle") String imageTitle, Model model) {
-        Image image = imageService.getImageById(id);
+        Image image = imageService.getImage(id);
         model.addAttribute("image", image);
         model.addAttribute("tags", image.getTags());
         List<Comment> comments = commentService.getAllCommentByImageId(image.getId());
@@ -106,7 +106,7 @@ public class ImageController {
 
         if (user.getId() == image.getUser().getId()) {
             if(image.getTags().size() > 0){
-                model.addAttribute("tags",convertTagsToString(image.getTags()));  
+                model.addAttribute("tags",convertTagsToString(image.getTags()));
             }
             return "images/edit";
         } else {
