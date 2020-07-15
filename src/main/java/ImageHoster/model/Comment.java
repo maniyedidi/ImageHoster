@@ -21,13 +21,11 @@ public class Comment {
     private Date createdDate;
 
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    //Below annotation indicates that the name of the column in 'comments' table referring the primary key in 'users' table will be 'user_id'
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    //Below annotation indicates that the name of the column in 'images' table referring the primary key in 'users' table will be 'user_id'
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JoinColumn(name = "image")
     private Image image;
 

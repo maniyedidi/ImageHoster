@@ -90,6 +90,7 @@ public class UserControllerTest {
     }
 
     //This test checks the controller logic for user signin when user requests for a signin form where he can enter the username and password and checks whether the logic returns the html file 'users/login.html'
+
     @Test
     public void signinWithGetRequest() throws Exception {
         this.mockMvc.perform(get("/users/login"))

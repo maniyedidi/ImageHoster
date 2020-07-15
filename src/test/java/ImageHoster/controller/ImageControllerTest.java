@@ -46,6 +46,7 @@ public class ImageControllerTest {
     private CommentService commentService;
 
     //This test checks the controller logic to get all the images after the user is logged in the application and checks whether the logic returns the html file 'images.html'
+
     @Test
     public void getUserImages() throws Exception {
         User user = new User();

@@ -105,7 +105,9 @@ public class ImageController {
         model.addAttribute("image", image);
 
         if (user.getId() == image.getUser().getId()) {
-            model.addAttribute("tags",convertTagsToString(image.getTags()));
+            if(image.getTags().size() > 0){
+                model.addAttribute("tags",convertTagsToString(image.getTags()));  
+            }
             return "images/edit";
         } else {
             String error = "Only the owner of the image can edit the image";
