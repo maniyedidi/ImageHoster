@@ -56,8 +56,23 @@ public class CommentRepository {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
         return resultList;
+    }
+
+    public void deleteComments(Integer commentId){
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+
+        try {
+            transaction.begin();
+            Comment comment = em.find(Comment.class, commentId);
+            em.remove(comment);
+            transaction.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            transaction.rollback();
+        }
+
     }
 
 }

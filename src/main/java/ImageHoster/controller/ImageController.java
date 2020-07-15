@@ -50,13 +50,13 @@ public class ImageController {
     //Also now you need to add the tags of an image in the Model type object
     //Here a list of tags is added in the Model type object
     //this list is then sent to 'images/image.html' file and the tags are displayed
-    @RequestMapping("/images/{id}")
-    public String showImage(@PathVariable("id") Integer id, Model model) {
+    @RequestMapping("/images/{id}/{imageTitle}")
+    public String showImage(@PathVariable("id") Integer id, @PathVariable("imageTitle") String imageTitle, Model model) {
         Image image = imageService.getImageById(id);
         model.addAttribute("image", image);
         model.addAttribute("tags", image.getTags());
-        List<Comment> comments =  commentService.getAllCommentByImageId(image.getId());
-        model.addAttribute("comments",comments);
+        List<Comment> comments = commentService.getAllCommentByImageId(image.getId());
+        model.addAttribute("comments", comments);
         return "images/image";
     }
 
@@ -103,11 +103,13 @@ public class ImageController {
         User user = (User) session.getAttribute("loggeduser");
         Image image = imageService.getImage(imageId);
         model.addAttribute("image", image);
-        model.addAttribute("tags", image.getTags());
+
         if (user.getId() == image.getUser().getId()) {
+            model.addAttribute("tags",convertTagsToString(image.getTags()));
             return "images/edit";
         } else {
             String error = "Only the owner of the image can edit the image";
+            model.addAttribute("tags", image.getTags());
             model.addAttribute("editError", error);
             return "images/image";
         }
@@ -146,7 +148,7 @@ public class ImageController {
         updatedImage.setDate(new Date());
 
         imageService.updateImage(updatedImage);
-        return "redirect:/images/" + updatedImage.getTitle();
+        return "redirect:/images/" + imageId +"/"+updatedImage.getTitle();
     }
 
 
@@ -162,25 +164,13 @@ public class ImageController {
             return "redirect:/images";
         } else {
             String error = "Only the owner of the image can delete the image";
-            String tags = convertTagsToString(image.getTags());
-            model.addAttribute("image", image);
             model.addAttribute("tags", image.getTags());
+            model.addAttribute("image", image);
             model.addAttribute("deleteError", error);
             return "images/image";
         }
 
 
-    }
-
-    @RequestMapping("/image/{imageId}/{imageTitle}/comments")
-    public String addComment(@PathVariable("imageId") String imageId, @PathVariable("imageTitle") String imageTitle, Model model,HttpSession session,@RequestParam("comment") String comment) {
-
-        Image image = imageService.getImage(Integer.parseInt(imageId));
-        User user = (User) session.getAttribute("loggeduser");
-
-        Comment commentObj = new Comment(comment, new Date(), user, image);
-        commentService.uploadComment(commentObj);
-        return "redirect:/images/"+ image.getId();
     }
 
     //This method converts the image to Base64 format

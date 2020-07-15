@@ -24,4 +24,9 @@ public class CommentService {
         return commentRepository.getAllComments(imageId);
     }
 
+    //This methos regturn the list comments by given imgae id
+    public void deleteComments(Integer commentId) {
+        commentRepository.deleteComments(commentId);
+    }
+
 }

@@ -98,6 +98,7 @@ public class ImageRepository {
             em.merge(updatedImage);
             transaction.commit();
         } catch (Exception e) {
+            e.printStackTrace();
             transaction.rollback();
         }
     }
