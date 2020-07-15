@@ -162,6 +162,7 @@ public class ImageController {
         User user = (User) session.getAttribute("loggeduser");
         Image image = imageService.getImage(imageId);
         if (user.getId() == image.getUser().getId()) {
+            commentService.deleteCommentsByImage(imageId);
             imageService.deleteImage(imageId);
             return "redirect:/images";
         } else {

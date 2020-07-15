@@ -59,7 +59,7 @@ public class CommentRepository {
         return resultList;
     }
 
-    public void deleteComments(Integer commentId){
+    public void deleteComment(Integer commentId){
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
 
@@ -74,5 +74,25 @@ public class CommentRepository {
         }
 
     }
+
+
+    public void deleteCommentsByImage(Integer imageId) {
+        List<Comment> resultList=null;
+        try {
+            EntityManager em = emf.createEntityManager();
+            TypedQuery<Comment> query = em.createQuery("SELECT c from Comment c WHERE c.image.id = :id", Comment.class).setParameter("id", imageId);
+            resultList = query.getResultList();
+            resultList.forEach(comment -> {
+                deleteComment(comment.getId());
+            });
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+
+
 
 }
